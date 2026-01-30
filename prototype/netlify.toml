@@ -1,12 +1,8 @@
-# Netlify build and deploy for Next.js prototype
-# https://docs.netlify.com/frameworks/next-js/
-# In Netlify: set "Base directory" to "prototype" so build runs from prototype/.
+# Used when Netlify base directory = prototype (root netlify.toml has base + publish).
 
 [build]
   command = "npm run build"
-  # Publish dir set by Netlify Next.js plugin when base dir = prototype
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "20"
-
-# If deploying from repo root (no base dir): use base = "prototype", command = "cd prototype && npm ci && npm run build", publish = "prototype/.next"

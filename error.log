@@ -1,0 +1,124 @@
+3:34:44 PM: build-image version: 78d0fcff90a66ed4048cfb3252450561538f796a (noble-new-builds)
+3:34:44 PM: buildbot version: 56e11047b8d1bc23ddae3b2bf8c5bdf7faa6a220
+3:34:44 PM: Building without cache
+3:34:44 PM: Starting to prepare the repo for build
+3:34:44 PM: Preparing Git Reference refs/heads/main
+3:34:45 PM: Custom build path detected. Proceeding with the specified path: 'prototype'
+3:34:45 PM: Custom publish path detected. Proceeding with the specified path: 'prototype'
+3:34:45 PM: Custom build command detected. Proceeding with the specified command: 'npm run build'
+3:34:45 PM: Starting to install dependencies
+3:34:46 PM: mise ~/.config/mise/config.toml tools: python@3.14.2
+3:34:46 PM: mise ~/.config/mise/config.toml tools: ruby@3.4.8
+3:34:46 PM: mise ~/.config/mise/config.toml tools: go@1.25.6
+3:34:46 PM: v20.20.0 is already installed.
+3:34:47 PM: Now using node v20.20.0 (npm v10.8.2)
+3:34:47 PM: Enabling Node.js Corepack
+3:34:47 PM: No npm workspaces detected
+3:34:47 PM: Installing npm packages using npm version 10.8.2
+3:34:48 PM: up to date in 682ms
+3:34:48 PM: npm packages installed
+3:34:48 PM: Successfully installed dependencies
+3:34:48 PM: Detected 1 framework(s)
+3:34:48 PM: "next" at version "15.5.11"
+3:34:48 PM: Starting build script
+3:34:49 PM: Section completed: initializing
+
+
+
+3:34:52 PM: Netlify Build                                                 
+3:34:52 PM: ────────────────────────────────────────────────────────────────
+3:34:52 PM: ​
+3:34:52 PM: ❯ Version
+3:34:52 PM:   @netlify/build 35.5.13
+3:34:52 PM: ​
+3:34:52 PM: ❯ Flags
+3:34:52 PM:   accountId: 6877d89035f47d25a897f08a
+3:34:52 PM:   baseRelDir: true
+3:34:52 PM:   buildId: 697cc1829fb021009572cebd
+3:34:52 PM:   deployId: 697cc1829fb021009572cebf
+3:34:52 PM: ​
+3:34:52 PM: ❯ Current directory
+3:34:52 PM:   /opt/build/repo/prototype
+3:34:52 PM: ​
+3:34:52 PM: ❯ Config file
+3:34:52 PM:   /opt/build/repo/prototype/netlify.toml
+3:34:52 PM: ​
+3:34:52 PM: ❯ Context
+3:34:52 PM:   production
+3:34:52 PM: ​
+3:34:52 PM: build.command from netlify.toml                               
+3:34:52 PM: ────────────────────────────────────────────────────────────────
+3:34:52 PM: ​
+3:34:52 PM: $ npm run build
+3:34:52 PM: > lnd-proto-training-prototype@0.1.0 build
+3:34:52 PM: > next build
+3:34:53 PM:  ⚠ Mismatching @next/swc version, detected: 15.5.7 while Next.js is on 15.5.11. Please ensure these match
+3:34:54 PM: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+3:34:54 PM:    ▲ Next.js 15.5.11
+3:34:54 PM:    Creating an optimized production build ...
+3:34:54 PM:  ⚠ Mismatching @next/swc version, detected: 15.5.7 while Next.js is on 15.5.11. Please ensure these match
+3:35:06 PM:  ⚠ Mismatching @next/swc version, detected: 15.5.7 while Next.js is on 15.5.11. Please ensure these match
+3:35:07 PM:  ⚠ Mismatching @next/swc version, detected: 15.5.7 while Next.js is on 15.5.11. Please ensure these match
+3:35:15 PM:  ✓ Compiled successfully in 19.1s
+3:35:15 PM:    Linting and checking validity of types ...
+3:35:19 PM:    Collecting page data ...
+3:35:21 PM:    Generating static pages (0/12) ...
+3:35:22 PM:    Generating static pages (3/12)
+3:35:22 PM:    Generating static pages (6/12)
+3:35:22 PM:    Generating static pages (9/12)
+3:35:22 PM:  ✓ Generating static pages (12/12)
+3:35:22 PM:    Finalizing page optimization ...
+3:35:22 PM:    Collecting build traces ...
+3:35:27 PM: Route (app)                                 Size  First Load JS    
+3:35:27 PM: ┌ ○ /                                    1.25 kB         144 kB
+3:35:27 PM: ├ ○ /_not-found                            998 B         103 kB
+3:35:27 PM: ├ ƒ /api/send-contract                     128 B         102 kB
+3:35:27 PM: ├ ƒ /api/send-quote                        128 B         102 kB
+3:35:27 PM: ├ ○ /back-office                           137 B         265 kB
+3:35:27 PM: ├ ○ /dashboard                             139 B         268 kB
+3:35:27 PM: ├ ○ /demo-camera                         2.63 kB         118 kB
+3:35:27 PM: ├ ○ /onboarding                           2.5 kB         189 kB
+3:35:27 PM: ├ ○ /payment-processing                    136 B         265 kB
+3:35:27 PM: └ ○ /welcome                               139 B         268 kB
+3:35:27 PM: + First Load JS shared by all             102 kB
+3:35:27 PM:   ├ chunks/255-596a00806980443d.js       45.7 kB
+3:35:27 PM:   ├ chunks/4bd1b696-409494caf8c83275.js  54.2 kB
+3:35:27 PM:   └ other shared chunks (total)          1.95 kB
+3:35:27 PM: ○  (Static)   prerendered as static content
+3:35:27 PM: ƒ  (Dynamic)  server-rendered on demand
+3:35:27 PM: ​
+3:35:27 PM: (build.command completed in 35s)
+3:35:27 PM: ​
+3:35:28 PM: (Netlify Build completed in 36s)
+3:35:28 PM: Section completed: building
+3:35:33 PM: Finished processing build request in 49.352s
+
+
+3:35:27 PM: Deploy site                                                   
+3:35:27 PM: ────────────────────────────────────────────────────────────────
+3:35:27 PM: ​
+3:35:27 PM: Starting to deploy site from 'prototype'
+3:35:27 PM: Calculating files to upload
+3:35:27 PM: 28 new file(s) to upload
+3:35:27 PM: 0 new function(s) to upload
+3:35:28 PM: Section completed: deploying
+3:35:28 PM: Site deploy was successfully initiated
+3:35:28 PM: ​
+3:35:28 PM: (Deploy site completed in 793ms)
+
+3:35:28 PM: Netlify Build Complete                                        
+3:35:28 PM: ────────────────────────────────────────────────────────────────
+3:35:28 PM: ​
+3:35:28 PM: Caching artifacts
+3:35:28 PM: Build script success
+3:35:32 PM: Uploading Cache of size 149.7MB
+3:35:33 PM: Section completed: cleanup
+
+
+3:35:28 PM: Starting post processing
+3:35:28 PM: Skipping form detection
+3:35:28 PM: Post processing - header rules
+3:35:28 PM: Post processing - redirect rules
+3:35:28 PM: Post processing done
+3:35:28 PM: Section completed: postprocessing
+3:35:29 PM: Site is live ✨

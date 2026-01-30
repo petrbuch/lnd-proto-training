@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  output: "export",
   // When repo has lockfile at root, point Next to prototype as workspace root for tracing
   outputFileTracingRoot: path.join(__dirname),
 };

@@ -52,11 +52,21 @@ repo/
 
 ## Deploy (Netlify)
 
-1. Connect the repo to Netlify.
-2. Build settings are read from the **root** `netlify.toml`: **Base directory** = `prototype`, **Build command** = `npm ci && npm run build`.
-3. Netlify’s Next.js / OpenNext plugin will detect the app and set the publish output.
+The app uses **static export** (`output: 'export'`). Build produces an `out/` folder; Netlify publishes that.
 
-No env vars required for the prototype.
+**In Netlify UI** (Site configuration → Build & deploy → Build settings → Edit settings):
+
+| Setting | Value |
+|--------|--------|
+| **Base directory** | `prototype` |
+| **Build command** | `npm run build` (or leave default; root `netlify.toml` sets `npm ci && npm run build`) |
+| **Publish directory** | `out` |
+| **Package directory** | Leave empty (or `prototype` if your UI requires it; same as base here) |
+| **Functions directory** | Leave default (not used for static export) |
+
+If you use the **root** `netlify.toml` (no overrides in the UI), it already sets `base = "prototype"`, `command = "npm ci && npm run build"`, `publish = "out"`. Then in the UI you only need to **match** or **clear overrides**: set **Publish directory** to `out` (not `prototype/.next`).
+
+No env vars required for the prototype. API routes were removed for static export; the app is client-only (mock flows).
 
 ## Docs
 
