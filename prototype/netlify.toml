@@ -4,7 +4,7 @@
 
 [build]
   command = "npm run build"
-  publish = ".next"
+  # Publish dir set by Netlify Next.js plugin when base dir = prototype
 
 [build.environment]
   NODE_VERSION = "20"

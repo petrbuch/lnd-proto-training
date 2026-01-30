@@ -1,0 +1,13 @@
+# Netlify: Next.js app lives in prototype/
+# https://docs.netlify.com/build/configure-builds/monorepos/
+# https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/
+
+[build]
+  base = "prototype"
+  command = "npm ci && npm run build"
+  # Publish dir is set by Netlify Next.js / OpenNext plugin
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Next.js is auto-detected; OpenNext adapter provisions serverless/edge. No publish override needed if using plugin default.
